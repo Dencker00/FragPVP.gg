@@ -1,0 +1,518 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
+
+
+
+body {
+    min-height: 100%;
+    min-width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow:hidden;
+    scroll-behavior: smooth;
+}
+
+
+.Servers {
+    background-image: url(assets/background.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    position:static;
+}
+
+
+
+
+
+
+
+
+
+
+audio {
+    filter: sepia(20%) saturate(70%) grayscale(1) contrast(99%) invert(12%);
+    width: 400px;
+    height: 25px;
+    top: 95%;
+    position: fixed;
+}
+
+
+
+
+.menu {
+    width: 100%;
+    height: 100%;
+    background-image: url(assets/red%20background.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.logo {
+    padding: 40px 0px;
+    position: absolute;
+    left: 40%;
+}
+
+
+
+
+
+.navbar { 
+  margin: 150px auto 0; 
+  padding: 0; 
+  list-style: none; 
+  display: table;
+  width: 600px;
+  text-align: center;
+  width: 100%;
+  text-align: center;
+  padding: 30% 0px;
+}
+.menu a {
+  color: #fff;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 0.35em;
+  display: inline-block;
+  padding: 15px 50px;
+  position: relative;
+  font-size: 20px;
+}
+.menu a:after {    
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 1px;
+  left: 50%;
+  position: absolute;
+  background: gold;
+  transition: width 0.5s ease 0s, left 0.5s ease 0s;
+  width: 0;
+}
+.menu a:hover:after { 
+  width: 100%; 
+  left: 0; 
+}
+@media screen and (max-height: 300px) {
+	ul {
+		margin-top: 40px;
+	}
+}
+
+
+
+
+
+
+.btn {
+    margin-top: calc(5% + 0px);
+    margin-left: calc(42% + 0px);
+    position: relative;
+    display: inline-block;
+    width: 277px;
+    height: 50px;
+    font-size: 1em;
+    font-weight: bold;
+    line-height: 60px;
+    text-align: center;
+    text-transform: uppercase;
+    background-color: transparent;
+    cursor: pointer;
+    text-decoration:none;
+    font-weight:900;
+    font-size:17px;
+    letter-spacing: 0.045em;
+}
+
+.btn svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.btn svg rect {
+    //stroke: #EC0033;
+    stroke-width: 4;
+    stroke-dasharray: 353, 0;
+    stroke-dashoffset: 0;
+    -webkit-transition: all 600ms ease;
+    transition: all 600ms ease;
+}
+
+.btn span{
+  background: rgb(255,130,130);
+  background: -moz-linear-gradient(left,  rgba(255,130,130,1) 0%, rgba(225,120,237,1) 100%);
+  background: -webkit-linear-gradient(left,  rgba(255,130,130,1) 0%,rgba(225,120,237,1) 100%);
+  background: linear-gradient(to right,  rgba(255,130,130,1) 0%,rgba(225,120,237,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff8282', endColorstr='#e178ed',GradientType=1 );
+  
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.btn:hover svg rect {
+    stroke-width: 4;
+    stroke-dasharray: 196, 543;
+    stroke-dashoffset: 437;
+}
+
+
+
+.server-list {
+    width: 100%;
+    float: left;
+    position: absolute;
+}
+
+.server-list a {
+    padding: 0px 20px;
+    width: 33%;
+    margin-left: 5%;
+    position: relative;
+}
+.server-list {
+    top: 150%;
+}
+
+
+
+
+.store {
+    width: 100%;
+    height: 100%;
+    background-image: url(assets/background.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+
+.store a {
+      color: #fff;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: .35em;
+  text-decoration: none;
+
+}
+
+.store .btn {
+  color: #fff;
+  text-transform: uppercase;
+  text-decoration: none;
+  display: inline-block;
+  position: absolute;
+    top: 290%;
+
+}
+
+
+
+
+
+.store p {
+  color: #fff;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 0.35em;
+  display: inline-block;
+  position: absolute;
+    left: 33%;
+    top: 260%;
+    font-size: 1.4em;
+}
+.store p:after {    
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  background: #fff;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+.store p:hover:after { 
+  width: 100%; 
+  left: 0; 
+}
+@media screen and (max-height: 300px) {
+	ul {
+		margin-top: 40px;
+	}
+}
+
+
+
+
+
+
+.store-info {
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 0.25em;
+  position: absolute;
+  top: 270%;
+  left: 35%;
+    background-color: rgb(0,0,0, 0.2);
+    height: 100px;
+    border: 1px solid red;
+    align-items: center;
+}
+
+.store-info h5{
+    color: white;
+    text-shadow: 1px 1px black;
+    font-size: 1.2em;
+    padding: 5px;
+    font-family: 'Caveat', cursive;
+}
+
+
+
+
+
+.discord {
+    width: 100%;
+    height: 100%;
+    background-image: url(assets/discord.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.discord a {
+      color: #fff;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: .35em;
+}
+
+
+.discord p {
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 0.35em;
+    position: absolute;
+    left: 31.5%;
+    top: 350%;
+    font-size: 1.4em;
+    font-family: 'Caveat', cursive;
+    border-radius: 8px 8px;
+    border: solid white;
+    line-height: 50px;
+}
+
+
+
+
+
+
+
+.discord .btn {
+  color: #fff;
+  text-transform: uppercase;
+  text-decoration: none;
+  display: inline-block;
+  top: 380%;
+  position: absolute;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Ignore */
+
+@import url(https://fonts.googleapis.com/css?family=Lato:100,300,400|Playfair+Display:400,700,400italic|Libre+Baskerville:400,700,400italic|Muli:300,400|Open+Sans:400,300,700|Oswald:400,700|Raleway:400,100,300,700|Montserrat:400,700|Merriweather:400,300,300italic,400italic,700|Bree+Serif|Vollkorn:400italic,400,700|Abril+Fatface|Cardo:400,400italic);
+
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+/* Basically just a bunch of typeface classes, some helper classes(letter-spacing, font-weight, etc.), decorative classes(line-on-headers, double-lines, etc). Three types of bg, image, gradient and solid color. I do this for testing headings/hero-image typography. Now there are ten presets here, but you can mix everything. I know that this brings to classivitis, but I still didn't dwelved into Saas, it is next on my learning roadmap, but I will create a fork soon with Saas and variables. */
+
+
+/* Preset 1 ---- Bold/cursive  */
+/* Preset 2 ---- Thin/bold  */
+/* Preset 3 ---- Add emphasis with color */
+/* Preset 4 ---- Thin/Super bold/thin */
+/* Preset 5 ---- Playing with serifs */
+/* Preset 6 ---- Super contrast */
+/* Preset 7 ---- Vertical text */
+/* Preset 8 ---- Playful type */
+/* Preset 9 ---- Middle flourish */
+/* Preset 10 ---- Overlay text */
+
+/* ==== Font sizes(based on Typeplate's scale) ==== */
+html {
+  font: normal 112.5%/1.65 serif; /* base font size 18px with 1.65 line-height */
+  -moz-font-feature-settings: "liga=1, dlig=1"; /* common and discretionary ligatures */
+    -ms-font-feature-settings: "liga", "dlig";
+    -webkit-font-feature-settings: "liga", "dlig";
+    -o-font-feature-settings: "liga", "dlig";
+    font-feature-settings: "liga", "dlig";
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  line-height: 1;
+  margin-top: 0;
+  color: #fff;
+	display: inline-block;
+
+}
+
+.gigantic{font-size: 11rem;}
+.supersize{font-size: 8rem;}
+.tera {
+  font-size: 6.5rem; /* 117 / 18 = 6.5 */
+  margin-bottom: 0.25385rem;
+}
+
+.giga {
+  font-size: 5rem; /* 90 / 18 = 5 */
+  margin-bottom: 0.33rem;
+}
+
+.mega {
+  font-size: 4rem; /* 72 / 18 = 4 */
+  margin-bottom: 0.4125rem;
+}
+
+.alpha {
+  font-size: 3.33333rem; /* 60 / 18 = 3.3333 */
+  margin-bottom: 0.495rem;
+}
+
+.beta {
+  font-size: 2.6667rem; /* 48 / 18 = 2.6667 */
+  margin-bottom: 0.61875rem;
+}
+
+.gamma {
+  font-size: 2rem; /* 36 / 18 = 2 */
+  margin-bottom: 0.825rem;
+}
+
+.delta {
+  font-size: 1.3333333333333333rem; /* 24 / 18 = 1.3333 */
+  margin-bottom: 1.2375rem;
+}
+
+.epsilon {
+  font-size: 1.16667rem; /* 21 / 18 = 1.1667 */
+  margin-bottom: 1.41429rem;
+}
+
+.zeta {
+  font-size: 1rem; /* 18 = 18 × 1 */
+  margin-bottom: 1.65rem;
+}
+/* ==== Typefaces  ==== */
+
+.open-sans{font-family: 'Open Sans';}
+.lato{font-family: 'Lato'}
+.playfair-display{font-family: 'Playfair Display'}
+.libre-baskerville{font-family: 'Libre Baskerville'}
+.oswald{font-family: 'Oswald'}
+.montserrat{font-family: 'Montserrat'}
+.vollkorn{font-family: 'Vollkorn'}
+.bree-serif{font-family: 'Bree Serif'}
+.raleway{font-family: 'Raleway'}
+.merriweather{font-family: 'Merriweather'}
+.cardo{font-family: 'Cardo'}
+.abril-fatface{font-family: 'Abril Fatface'}
+.muli{font-family: 'Muli'}
+
+/* ==== Weights, styles, letterspacing, etc. ==== */
+
+.thin{font-weight: 100;}
+.light{font-weight: 300;}
+.regular{font-weight: 400;}
+.bold{font-weight: 700;}
+.italic{font-style: italic;}
+.normal{font-style: normal;}
+.ls-small{letter-spacing: 2px;}
+.ls-medium{letter-spacing: 4px;}
+.ls-large{letter-spacing: 8px;}
+.ls-xlarge{letter-spacing: 12px;}
+.uppercase{text-transform: uppercase;}
+.color-emphasis-1{color: #FF4056}
+.color-emphasis-2{color: #000;}
+.color-emphasis-3{color: #60547c}
+.text-left{text-align: left;}
+.line-height-small{line-height: 1.2}
+.line-height-medium{line-height: 1.45}
+.line-height-large{line-height: 1.65}
+
+/* ==== General styles ==== */
+section{
+	height: 600px;
+	padding: 3rem 0;
+    text-decoration: none;
+}
+.wrapper{
+	max-width: 53.33rem;
+	margin: 0 auto;
+	position: relative;
+	z-index: 10;
+	top:0%;
+	text-align: center;
+
+}
+
+
+
+/* Media queries */
+ @media screen and (min-width: 1440px) {
+   section{height:700px}
+ }
+
+
+
+
+
+
+
+
+
+
+
+
